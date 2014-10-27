@@ -28,14 +28,11 @@ public class PigeonFactoryThread implements Runnable {
     public void run() {
         try {
             for(int i = 0 ; i < NB_OF_PIGEONS && running ; i++) {
-                System.out.println("pigeon !");
-                
-                final int id = i;
                 app.enqueue(new Callable<Pigeon>() {
 
                     public Pigeon call() throws Exception {
                         Pigeon p = new Pigeon(
-                            "pigeon " + id, 
+                            "pigeon", 
                             app.getAssetManager(), 
                             app.getBulletAppState());
                         

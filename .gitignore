@@ -4,3 +4,4 @@ build/
 build.xml
 liblwjgl64.so
 libopenal64.so
+dist/

@@ -6,6 +6,7 @@ package com.supinfo.explosions.geometries;
 
 import com.jme3.asset.AssetManager;
 import com.jme3.bullet.BulletAppState;
+import com.jme3.bullet.collision.PhysicsCollisionObject;
 import com.jme3.bullet.control.RigidBodyControl;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Geometry;
@@ -23,7 +24,7 @@ import com.supinfo.explosions.materials.MatBrick;
 public class Wall extends Geometry {
     
     public static final float THICKNESS = 0.5f;
-    public static final float DEPTH = 0.5f;
+    public static final float DEPTH = 1f;
     
     private final RigidBodyControl control = new RigidBodyControl(0.0f);
     
